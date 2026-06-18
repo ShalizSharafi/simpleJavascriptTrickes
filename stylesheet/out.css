@@ -7,18 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-300: oklch(80.8% 0.114 19.571);
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-orange-800: oklch(47% 0.157 37.304);
-    --color-amber-600: oklch(66.6% 0.179 58.318);
-    --color-black: #000;
     --spacing: 0.25rem;
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-medium: 500;
-    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -183,36 +175,11 @@
     width: calc(var(--spacing) * 7);
     height: calc(var(--spacing) * 7);
   }
-  .size-9 {
-    width: calc(var(--spacing) * 9);
-    height: calc(var(--spacing) * 9);
-  }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-12\.5 {
-    height: calc(var(--spacing) * 12.5);
-  }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
   .h-20 {
     height: calc(var(--spacing) * 20);
-  }
-  .h-25 {
-    height: calc(var(--spacing) * 25);
-  }
-  .h-\[100\] {
-    height: 100;
-  }
-  .h-\[100px\] {
-    height: 100px;
   }
   .h-screen {
     height: 100vh;
@@ -223,23 +190,14 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-12\.5 {
-    width: calc(var(--spacing) * 12.5);
-  }
-  .w-fit {
-    width: fit-content;
-  }
   .w-full {
     width: 100%;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .items-center {
     align-items: center;
-  }
-  .justify-around {
-    justify-content: space-around;
-  }
-  .justify-between {
-    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
@@ -253,36 +211,8 @@
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-black {
-    border-color: var(--color-black);
-  }
-  .bg-\[ur\] {
-    background-color: ur;
-  }
-  .bg-amber-600 {
-    background-color: var(--color-amber-600);
-  }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
-  .bg-\[url\(\.\.\/\)\] {
-    background-image: url(../);
-  }
   .bg-\[url\(\.\.\/images\/london2\.jpg\)\] {
     background-image: url(../images/london2.jpg);
-  }
-  .bg-\[url\(\.\.\/images\/mountains2\.jpg\)\] {
-    background-image: url(../images/mountains2.jpg);
   }
   .bg-cover {
     background-size: cover;
@@ -296,54 +226,23 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
-  .text-\[\#\#f44336\!important\] {
-    color: ##f44336!important;
-  }
-  .text-\[\#\#f44336\] {
-    color: ##f44336;
-  }
   .text-\[\#757575\] {
     color: #757575;
   }
-  .text-\[\#\] {
-    color: #;
-  }
-  .text-\[\#f1f1f1\] {
-    color: #f1f1f1;
-  }
-  .text-\[\#f44336\] {
-    color: #f44336;
-  }
-  .text-\[grey\] {
-    color: grey;
-  }
-  .text-\[orange-800\] {
-    color: orange-800;
-  }
-  .text-orange-800 {
-    color: var(--color-orange-800);
-  }
   .capitalize {
     text-transform: capitalize;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
   }
   .\*\:h-full {
     :is(& > *) {
@@ -351,20 +250,22 @@
     }
   }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+.header-bg-dark {
+  background-color: rgb(17, 17, 17) !important;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-duration: initial;
     }
   }
 }

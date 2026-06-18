@@ -1,1 +1,5 @@
 @import 'tailwindcss';
+
+.header-bg-dark{
+       background-color: rgb(17, 17, 17) !important;
+}
