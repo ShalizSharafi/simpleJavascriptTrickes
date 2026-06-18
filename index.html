@@ -32,11 +32,11 @@
               </div>
        </header>
        <!-- image section -->
-        <section class="w-full h-screen bg-[url(../images/london2.jpg)] bg-cover bg-center bg-no-repeat">
+        <section class="w-full h-screen bg-[url(../images/london2.jpg)] bg-cover bg-center bg-no-repeat flex items-center justify-center px-5 lg:px-10">
               <!-- popupwall -->
-              <div class="w-full h-screen backdrop-blur-[3px] hidden  fixed top-0 left-0 popUpWall"></div>
+              <div class="w-full z-99 h-screen backdrop-blur-[3px] hidden  fixed top-0 left-0 popUpWall"></div>
               <!-- popup box -->
-              <div class="popUp w-62.5 lg:w-150  bg-white  fixed top-1/2 left-[-200%] -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-black/40 flex flex-wrap content-start duration-500">
+              <div class="popUp z-99 w-62.5 lg:w-150  bg-white  fixed top-1/2 left-[-200%] -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-black/40 flex flex-wrap content-start duration-500">
                      <nav class="w-full flex bg-black">
                             <ul class="w-full flex flex-wrap justify-start items-center h-full">
                                    <li class=" px-2.5 py-1.5 bg-[#f44336]
@@ -67,6 +67,40 @@
                             </div>
                      </div>
                      <audio src="sound/litupsubway-ui-close-sfx-513359.mp3" id="sound"></audio>
+              </div>
+              <div class="row py-2  justify-center">
+              <figure class="card" data-class="op" >
+                     <div class="w-full flex items-center justify-center">
+                            <img src="images/sanfran.jpg" alt="" class="w-full h-full object-cover">
+                     </div>
+                     <div class="py-2.5 flex flex-wrap  gap-2">
+                            <h3 class="text-lg lg:text-xl w-full text-start font-medium">West Coast, Norway
+</h3>
+                            <h4 class="text-xs lg:text-sm w-full text-start font-medium">Roundtrip from $79
+
+</h4>
+                            <p class="w-full text-start font-light text-sm">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+
+</p>
+                            <a class="link">buy tickets</a>
+                     </div>
+              </figure>
+              <figure class="card"  data-class="op">
+                     <div class="w-full flex items-center justify-center">
+                            <img src="images/cinqueterre.jpg" alt="" class="w-full h-full object-cover">
+                     </div>
+                     <div class="py-2.5 flex flex-wrap  gap-2">
+                            <h3 class="text-lg lg:text-xl w-full text-start font-medium">Mountains, Austria
+</h3>
+                            <h4 class="text-xs lg:text-sm w-full text-start font-medium">Roundtrip from $90
+
+</h4>
+                            <p class="w-full text-start font-light text-sm">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+
+</p>
+                            <a class="link">buy tickets</a>
+                     </div> 
+              </figure>
               </div>
         </section>
 </body>
