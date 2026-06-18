@@ -3,3 +3,14 @@
 .header-bg-dark{
        background-color: rgb(17, 17, 17) !important;
 }
+
+@layer components{
+       .link{
+              @apply w-fit px-1 py-0.5 bg-gray-400
+              *:capitalize *:w-full *:h-full *:font-light *:text-white *:text-[14px] duration-500 hover:bg-[#f44336] cursor-pointer
+       }
+
+       .popupLi{
+              @apply px-2 py-1.5 flex items-center gap-2 *:text-white *:capitalize *:font-light *:text-[16px] duration-500 hover:bg-gray-400
+       }
+}
