@@ -5,7 +5,7 @@ A simple travel-themed website built to practice JavaScript popup and modal tech
 
 
 
-## 🌐 Live Demo
+## 🌐 Live Demo : https://shalizsharafi.github.io/simpleJavascriptTrickes/
 
 <img width="600" height="300" alt="Screenshot 2026-06-19 at 8 14 50 AM" src="https://github.com/user-attachments/assets/f5f912dd-082c-4569-9302-a5e7f36014b6" />
 
